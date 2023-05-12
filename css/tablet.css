@@ -25,7 +25,7 @@
 
     .header .menu-toggle {
         display: none;
-      }
+    }
 
     .header .logo {
         margin-right: 120px;
@@ -56,17 +56,20 @@
         color: var(--ocean);
     }
 
+    .contact-list>li:first-child {
+        margin-bottom: 12px;
+        } 
+
     .nav-link {
         position:relative;
         
         display: inline-block ;
         padding: 24px 0;
-        
     } 
     
     .nav-link.current {
         color: var(--ocean);
-      }
+    }
       
       .nav-link.current::after {
         content: "";
@@ -93,7 +96,14 @@
         background-color: var(--ocean);
     }
 
-     .card-set {
+    .modal {
+        top: 50%;
+        width: 408px;
+    
+        transform: translate(-50%, -50%);
+      }
+
+    .card-set {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -157,6 +167,7 @@
     .imp-text + input {
         width: 264px;
         margin-right: 24px;
+        margin-bottom: 0;
     }
 
     .subscribe-btn {
@@ -196,14 +207,8 @@
     
     .card-link:hover, 
     .card-link:focus{
-      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     }
-}
-
-@media only screen and (min-width:768px) and (max-width:1158px) {
-    .contact-list>li:first-child {
-        margin-bottom: 12px;
-        } 
 
     .contact{
         margin-left: 121px;
