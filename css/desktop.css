@@ -1,0 +1,131 @@
+@media only screen and (min-width:1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    } 
+
+    .contact-list {
+        display: flex;
+        gap: 40px;
+       }
+    
+    .contact {
+        margin-left: 331px;
+    }
+
+    .header .logo {
+        margin-right: 76px;
+      }
+
+    .section:not(:first-child){
+        padding: 120px 0;
+    }
+    
+    .section:nth-child(3) {
+        padding-top: 0;
+    }
+
+    .hero {
+        max-width: 1440px;
+        padding: 188px 0;
+      }
+
+    .hero-title {
+        margin-bottom: 48px;
+      }
+
+    .card-set-item {
+        width: calc((100% - 48px) / 3);
+      }
+    
+    .card-set-item.feature,
+    .card-set-item.worker {
+        width: calc((100% - 72px) / 4);
+      }
+
+    .features .thumb {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        min-height: 112px;
+        background-color: var(--cloud);
+        border-radius: 4px;
+        margin-bottom: 8px;
+      }
+
+    .features .title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+      }
+
+    .specialty {
+        display: flex;
+    }
+
+    .customers-list {
+        flex-wrap: nowrap;
+    }
+
+    .footer {
+        padding: 100px 0;
+    }
+    .footer-container {
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .footer-info {
+        margin-right: 120px;
+    }
+
+    .footer-social-media {
+        margin-right: 80px;
+    }
+/* PORTFOLIO */
+
+  .portfolio-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  } 
+
+  .buttons {
+    margin-bottom: 72px;
+}
+
+.portfolio>.card-set-item {
+  width: calc((100% - 48px) / 3);
+}
+
+  .card-thumb {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+   .overlay-card {
+    display: block;
+    position:absolute;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 100%;
+    background-color: var(--iris);
+
+    transform: translateY(100%);
+    transition: transform var(--animation);
+  }
+
+  .card-link:hover .overlay-card,
+  .card-link:focus .overlay-card {
+    transform: translateY(0) ;
+  }
+
+  .overlay-text {
+    padding: 40px 32px;
+    color: var(--cloud);
+  }
+
+}

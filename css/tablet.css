@@ -1,0 +1,215 @@
+@media only screen and (min-width:769px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+        url(../images/hero-img_desctop@1x.jpg);
+    }
+  
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+        url(../images/hero-img_desctop@2x.jpg);
+      }
+    } 
+}
+
+@media only screen and (min-width:768px) {
+    .container {
+      max-width: 768px;      
+    } 
+
+    .header-container {
+        padding: 0 16px;
+    }
+
+    .header .menu-toggle {
+        display: none;
+      }
+
+    .header .logo {
+        margin-right: 120px;
+    }  
+
+    .contact {
+        display: block;
+    }
+    
+    .navigation {
+        display: block;
+    }
+
+    .site-nav {
+        display: flex;
+        gap: 40px;
+    }
+
+    .contact-link,
+    .nav-link {
+        transition: color var(--animation);
+    }
+
+    .contact-link:hover,
+    .contact-link:focus,
+    .nav-link:hover,
+    .nav-link:focus {
+        color: var(--ocean);
+    }
+
+    .nav-link {
+        position:relative;
+        
+        display: inline-block ;
+        padding: 24px 0;
+        
+    } 
+    
+    .nav-link.current {
+        color: var(--ocean);
+      }
+      
+      .nav-link.current::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--ocean);
+      }
+
+    .hero-title {
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        margin-bottom: 36px;
+        }
+
+    .main-btn:hover,
+    .main-btn:focus {
+        background-color: var(--ocean);
+    }
+
+     .card-set {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        }
+
+    .features .card-set-item {
+        width: calc((100% - 24px) / 2);
+        margin: 0;
+        }   
+
+    .card-set-item.worker {
+        margin: 0;
+        }
+    
+    .icon-link:hover,
+    .icon-link:focus {
+          background-color: var(--ocean);
+        }
+
+    .customers-list {
+        gap: 72px 24px;
+        justify-content: center;
+          
+        }
+        
+    .customer-item {
+        max-width: 168px;
+        }
+
+    .customer-link:hover,
+    .customer-link:focus {
+        color: var(--ocean);
+        border-color: var(--ocean);
+        } 
+        
+    .footer .icon-link:hover,
+    .footer .icon-link:focus {
+        background-color: var(--green)
+    }
+
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 72px 24px;
+
+        padding: 0 108px;
+    }
+
+    .footer .logo,
+    .footer-social-media,
+    .footer-form {
+        text-align: start;
+      }
+
+    .footer-text {
+        max-width: 264px;
+    }
+
+    .imp-text + input {
+        width: 264px;
+        margin-right: 24px;
+    }
+
+    .subscribe-btn {
+        display: inline-flex ;
+    }
+
+/* PORTFOLIO */
+
+    .portfolio-section {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+
+    .buttons {
+        margin-bottom: 64px;
+        justify-content: center;
+
+        max-width: none;
+    }
+
+    .button {
+        padding: 12px 24px;
+    }
+
+    .card-set.portfolio {
+        justify-content: start;
+    }
+
+    .portfolio>.card-set-item {
+        width: calc((100% - 24px) / 2);
+        margin: 0;
+        }
+
+    .card-link {
+        transition: box-shadow var(--animation);
+    }
+    
+    .card-link:hover, 
+    .card-link:focus{
+      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1158px) {
+    .contact-list>li:first-child {
+        margin-bottom: 12px;
+        } 
+
+    .contact{
+        margin-left: 121px;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        }
+}
