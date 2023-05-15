@@ -91,17 +91,14 @@
         margin-bottom: 36px;
         }
 
+    .modal {
+        max-width: 408px;
+    }
+
     .main-btn:hover,
     .main-btn:focus {
         background-color: var(--ocean);
     }
-
-    .modal {
-        top: 50%;
-        width: 408px;
-    
-        transform: translate(-50%, -50%);
-      }
 
     .card-set {
         display: flex;
